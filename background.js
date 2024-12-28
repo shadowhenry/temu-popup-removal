@@ -10,6 +10,9 @@ chrome.action.onClicked.addListener((tab) => {
 
       // 移除所有div元素，其data-testid属性为'beast-core-modal-mask'
       document.querySelectorAll('div[data-testid="beast-core-modal-mask"]').forEach(element => element.remove());
+
+      // 移除所有div元素，其data-testid属性为'beast-core-modal-inner'
+      document.querySelectorAll('div[data-testid="beast-core-modal-inner"]').forEach(element => element.remove());
     }
   });
 });
